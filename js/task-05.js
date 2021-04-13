@@ -1,6 +1,6 @@
 
-let inputNameEl = document.querySelector('#name-input');
-let greetingEl = document.querySelector('#name-output');
+let inputNameEl = document.getElementById('name-input');
+let greetingEl = document.getElementById('name-output');
 
 inputNameEl.oninput = function () {
     if (inputNameEl.value === '') {

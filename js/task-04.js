@@ -1,6 +1,6 @@
 const incrementBtn = document.querySelector('[data-action="increment"]');
 const decrementBtn = document.querySelector('[data-action="decrement"]');
-const counter = document.querySelector('#value');
+const counter = document.getElementById('value');
 
 let counterValue = 0;
 const increment = () => {

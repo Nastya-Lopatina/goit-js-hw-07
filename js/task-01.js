@@ -4,7 +4,7 @@ const getCategoriesList = function (elements) {
     console.log(`В списке ${elements.length} категории.`);
 }
 
-const getCategoryAndElements = function (elements) {
+const getCategoryEl = function (elements) {
     elements.forEach(element => {
         const elementTitle = element.firstElementChild.textContent;
         const elementList = element.querySelectorAll('li');
@@ -20,4 +20,4 @@ const getCategoryAndElements = function (elements) {
 
 
 getCategoriesList(categoriEselements)
-getCategoryAndElements(categoriEselements)
+getCategoryEl(categoriEselements)

@@ -9,7 +9,7 @@ const ingredients = [
 
 const ingredientsListEl = document.getElementById('ingredients');
 
- ingredients.forEach(ingredient => {
+ ingredients.map(ingredient => {
    
   const newItemEl = document.createElement('li');
   

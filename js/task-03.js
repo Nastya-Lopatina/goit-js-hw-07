@@ -17,9 +17,10 @@ const images = [
 ];
 const listImages = document.getElementById('gallery')
 
-images.forEach(img => {
-listImages.insertAdjacentHTML('beforeEnd', `<li><img width = 340 height = 200 src="${img.url}" alt="${img.alt}"></li>`);
+const pictureEL = ({ url, alt }) => {
 
- });
+  return `<li><img width = 340 height = 200 src="${url}" alt="${alt}"></li>`;
+};
+const galoreOfPictures = images.map(pictureEL).join('');
 
-
+listImages.insertAdjacentHTML('afterbegin', galoreOfPictures);
